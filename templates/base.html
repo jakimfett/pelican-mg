@@ -89,10 +89,7 @@
 
             <div class="uk-panel uk-panel-box">
                 <ul class="uk-nav uk-nav-side">
-                    <li class="uk-nav-header">Categories</li>
-                    {% for cat, _ in categories %}
-                    <li {% if cat == category %}class="uk-active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-                    {% endfor %}
+                    
                     {% if DISPLAY_PAGES_ON_MENU != False %}
                     <li class="uk-nav-header">Pages</li>
                     
@@ -101,10 +98,11 @@
                         <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
                     </li>
                     {% endfor %}
-                    
+                    {% if categories %}
+                    <li {% if page_name == 'categories' %}class="uk-active"{% endif %}><a href="{{ SITEURL }}/categories.html">Post Categories</a></li>
                     {% endif %}
-
-                    <li class="uk-nav-divider"></li>
+                    {% endif %}
+                    
                     <li {% if page_name == 'archives' %}class="uk-active"{% endif %}><a href="{{ SITEURL }}/archives.html">Archives</a></li>
                 </ul>
             </div>
