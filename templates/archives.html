@@ -10,12 +10,16 @@
 
     {% for article in dates %}
     <article class="uk-article">
-        <a href="{{ article.url }}" class="uk-article-title uk-link-muted mg-list-title">{{ article.title }}</a>
-        <p class="uk-article-meta">
-            <time datetime="{{ article.date.strftime('%Y-%m-%d') }}">{{ article.locale_date }}</time>
-        </p>
-        <p>{{ ' '.join(article.content.split(' ')[0:75])|striptags }}...</p>
-
+        <a href="{{ article.url }}" class="uk-article-title uk-link-muted mg-list-title">
+            {{ article.title }}
+            <span class="uk-article-meta"> 
+                <time datetime="{{ article.date.strftime('%Y-%m-%d') }}">{{ article.locale_date }}</time>
+            </span>
+        </a>test
+        <br/>
+        <span class="uk-article-lead" itemprop="description">
+            {% if article.summary %}{{ article.summary}}{% else %}{{ ' '.join(article.content.split(' ')[0:20])|striptags }}...{% endif %}
+        </span>
     </article>
     {% endfor %}
 
