@@ -51,7 +51,7 @@ The following settings are required for a correct behaviour of this theme.
 ```python
     TAG_SAVE_AS = ''
     AUTHOR_SAVE_AS = ''
-    DIRECT_TEMPLATES = ('index', 'categories', 'archives', 'search')
+    DIRECT_TEMPLATES = ('index', 'categories', 'archives')
 ```
 
 ###Optional settings
@@ -150,7 +150,7 @@ This is the settings file for Dev's Bytes.
 
     TAG_SAVE_AS = ''
     AUTHOR_SAVE_AS = ''
-    DIRECT_TEMPLATES = ('index', 'categories', 'archives', 'search')
+    DIRECT_TEMPLATES = ('index', 'categories', 'archives')
 
     RELATIVE_URLS = False
 
