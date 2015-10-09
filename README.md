@@ -51,6 +51,17 @@ A brief description of your site, for social networks and search engines.
 **FOOTER**
 A custom footer notice.
 
+**LINKS**
+A list of tuples (icon, URL). The icons are from [Font Awesome]
+(http://fortawesome.github.io/Font-Awesome/). The suffix "-square" is removed
+in the footer icons of the small screen layout.
+e.g.
+```python
+    LINKS = (('twitter', 'https://twitter.com/twitteruser'),
+              ('github', 'https://github.com/githubuser'),
+              ('envelope', 'mailto:user@gmail.com'),)
+```
+
 **META_IMAGE**
 The absolute URL of a custom image for the `og:image` meta property, Twitter
 summary card, and `image` meta property of Schema.org. This image is used in
@@ -68,17 +79,6 @@ The StatCounter security code for the project.
 
 **SHARE**
 Enable share buttons, boolean.
-
-**SOCIAL**
-A list of tuples (icon, URL). The icons are from [Font Awesome]
-(http://fortawesome.github.io/Font-Awesome/). The suffix "-square" is removed
-in the footer icons of the small screen layout.
-e.g.
-```python
-    SOCIAL = (('twitter', 'https://twitter.com/twitteruser'),
-              ('github', 'https://github.com/githubuser'),
-              ('envelope', 'mailto:user@gmail.com'),)
-```
 
 License
 ---------

@@ -106,20 +106,16 @@
                     <li {% if page_name == 'archives' %}class="uk-active"{% endif %}><a href="{{ SITEURL }}/archives.html">Archives</a></li>
                 </ul>
             </div>
-
-            <div class="uk-panel uk-panel-box">
-                <h3 class="uk-panel-title">Receive Updates</h3>
-                <a rel="alternate" type="application/atom+xml" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" class="mg-feed"><i class="uk-icon-rss uk-icon-medium"></i> ATOM</a>
-            </div>
             
-            {% if SOCIAL %}
+            {% if LINKS %}
             <div class="uk-panel uk-panel-box">
-                <h3 class="uk-panel-title">Contacts</h3>
-                {% for icon, link in SOCIAL %}
+                <h3 class="uk-panel-title">Links</h3>
+                {% for icon, link in LINKS %}
                 <a class="mg-icon-link" href="{{ link }}">
                     <i class="uk-icon-{{ icon }} uk-icon-medium"></i>
                 </a>
                 {% endfor %}
+                <a rel="alternate" type="application/atom+xml" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" class="mg-feed"><i class="uk-icon-rss uk-icon-medium"></i></a>
             </div>
             {% endif %}
 
