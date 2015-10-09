@@ -42,16 +42,19 @@ The following settings are required for a correct behaviour of this theme.
 
 ###Optional settings
 
-**ALT_NAME**
+**ALT_NAME**  
 An alternative name for your site. It appears in the header bar.
 
-**DESCRIPTION**
+**BLURB**  
+A sidebar widget for text
+
+**DESCRIPTION**  
 A brief description of your site, for social networks and search engines.
 
-**FOOTER**
+**FOOTER**  
 A custom footer notice.
 
-**LINKS**
+**LINKS**  
 A list of tuples (icon, URL). The icons are from [Font Awesome]
 (http://fortawesome.github.io/Font-Awesome/). The suffix "-square" is removed
 in the footer icons of the small screen layout.
@@ -62,25 +65,25 @@ e.g.
               ('envelope', 'mailto:user@gmail.com'),)
 ```
 
-**META_IMAGE**
+**META_IMAGE**  
 The absolute URL of a custom image for the `og:image` meta property, Twitter
 summary card, and `image` meta property of Schema.org. This image is used in
 every page of the blog. Articles and pages can override the default
 **META_IMAGE** by setting the "image" metadata in the relative file.
 
-**META_IMAGE_TYPE**
+**META_IMAGE_TYPE**  
 The MIME type for **META_IMAGE**, this is needed for `og:image:type`.
 
-**SC_PROJECT**
+**SC_PROJECT**  
 The StatCounter project number.
 
-**SC_SECURITY**
+**SC_SECURITY**  
 The StatCounter security code for the project.
 
-**SHARE**
+**SHARE**  
 Enable share buttons, boolean.
 
-**SITESUBTITLE**
+**SITESUBTITLE**  
 Add a tagline to the header, next to the site title
 
 License

@@ -104,7 +104,13 @@
                     <li {% if page_name == 'archives' %}class="uk-active"{% endif %}><a href="{{ SITEURL }}/archives.html">Archives</a></li>
                 </ul>
             </div>
-            
+
+			{% if BLURB %}
+            <div class="uk-panel uk-panel-box">
+                {{ BLURB }}
+            </div>
+            {% endif %}
+			
             {% if LINKS %}
             <div class="uk-panel uk-panel-box">
                 <h3 class="uk-panel-title">Links</h3>
