@@ -80,6 +80,9 @@ The StatCounter security code for the project.
 **SHARE**
 Enable share buttons, boolean.
 
+**SITESUBTITLE**
+Add a tagline to the header, next to the site title
+
 License
 ---------
 
