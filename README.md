@@ -9,26 +9,13 @@ blogroll. Feeds are provided via ATOM.
 Screenshots
 --------------
 
-Here is how the home page look like
+Browser screenshot
 
 ![mg home page screenshot](https://raw.githubusercontent.com/lucachr/pelican-mg/master/home-page-screenshot.png)
 
-This is the article page
-
-![mg article page screenshot](https://raw.githubusercontent.com/lucachr/pelican-mg/master/article-screenshot.png)
-
-The home page on a smartphone
+Smartphone screenshot
 
 ![mg home page smartphone top screenshot](https://github.com/lucachr/pelican-mg/blob/master/home-page-smartphone-top.png)
-![mg home page smartphone bottom screenshot](https://github.com/lucachr/pelican-mg/blob/master/home-page-smartphone-bottom.png)
-
-This is the article layout on a smartphone screen
-
-![mg article page smartphone top screenshot](https://raw.githubusercontent.com/lucachr/pelican-mg/master/article-page-smartphone-top.png)
-
-Live Example
---------------
-Check out [my blog](http://www.devsbytes.com).
 
 Features
 --------------
@@ -88,10 +75,9 @@ A list of tuples (icon, URL). The icons are from [Font Awesome]
 in the footer icons of the small screen layout.
 e.g.
 ```python
-    SOCIAL = (('twitter', 'https://twitter.com/luca_chr'),
-              ('google-plus-square', 'https://plus.google.com/117284397605208270870'),
-              ('github', 'https://github.com/lucachr'),
-              ('envelope', 'mailto:luca92web@gmail.com'),)
+    SOCIAL = (('twitter', 'https://twitter.com/twitteruser'),
+              ('github', 'https://github.com/githubuser'),
+              ('envelope', 'mailto:user@gmail.com'),)
 ```
 
 License
