@@ -15,7 +15,7 @@
             <span class="uk-article-meta"> 
                 <time datetime="{{ article.date.strftime('%Y-%m-%d') }}">{{ article.locale_date }}</time>
             </span>
-        </a>test
+        </a>
         <br/>
         <span class="uk-article-lead" itemprop="description">
             {% if article.summary %}{{ article.summary}}{% else %}{{ ' '.join(article.content.split(' ')[0:20])|striptags }}...{% endif %}
