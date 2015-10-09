@@ -21,7 +21,6 @@
 <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{% block description %}{{ DESCRIPTION }}{% endblock %}">
-<link rel="shortcut icon" href="{{ SITEURL }}/{{ FAVICON }}" type="{{ FAVICON_TYPE }}">
 <meta name="author" content="{{ AUTHOR }}">
 <meta name="copyright" content="{{ AUTHOR }}">
 <meta name="twitter:card" content="summary" />
@@ -187,7 +186,6 @@
 <script src="/theme/js/plugins.js"></script>
 <script src="/theme/js/main.js"></script>
 
-{% include 'disqus_count.html' %}
 {% include 'analytics.html' %}
 </body>
 </html>

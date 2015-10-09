@@ -37,7 +37,6 @@ Features
 * [Twitter Summary Card](https://dev.twitter.com/cards/types/summary) support.
 * [Schema.org](http://schema.org) support.
 * Responsive design.
-* Comment with DISQUS.
 * SCSS style sheets.
 * Analytics with Google Analytics, PIWIK and StatCounter.
 * Share buttons built with share urls.
@@ -61,12 +60,6 @@ An alternative name for your site. It appears in the header bar.
 
 **DESCRIPTION**
 A brief description of your site, for social networks and search engines.
-
-**FAVICON**
-The relative path of your favicon, this is needed for Disqus forum favicon.
-
-**FAVICON_TYPE**
-The MIME type of your favicon, this is needed for Disqus forum favicon.
 
 **FOOTER**
 A custom footer notice.
